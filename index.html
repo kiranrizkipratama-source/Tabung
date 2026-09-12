@@ -6,6 +6,20 @@
 
     <title>Tabungan Saya</title>
 
+    <!-- ==============================
+       ICON WEBSITE / APLIKASI
+       ============================== -->
+
+    <link rel="icon" type="image/png" href="./logo.png" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./logo.png" />
+
+    <link rel="manifest" href="./manifest.json" />
+
+    <meta name="theme-color" content="#6366F1" />
+
+    <link rel="stylesheet" href="./style.css" />
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
@@ -61,7 +75,9 @@
         margin: auto;
       }
 
-      /* HEADER */
+      /* ==============================
+       HEADER
+       ============================== */
 
       header {
         position: relative;
@@ -91,6 +107,7 @@
         gap: 12px;
       }
 
+      /* LOGO APLIKASI */
       .brand-icon {
         width: 48px;
         height: 48px;
@@ -98,8 +115,16 @@
         align-items: center;
         justify-content: center;
         border-radius: 15px;
-        background: rgba(255, 255, 255, 0.16);
-        font-size: 24px;
+        overflow: hidden;
+        background: transparent;
+        flex-shrink: 0;
+      }
+
+      .brand-icon img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
       }
 
       .brand h1 {
@@ -140,7 +165,9 @@
         margin-top: 5px;
       }
 
-      /* CARDS */
+      /* ==============================
+       CARDS
+       ============================== */
 
       .cards {
         display: grid;
@@ -216,7 +243,9 @@
         color: #dc2626;
       }
 
-      /* GRID */
+      /* ==============================
+       GRID
+       ============================== */
 
       .grid {
         display: grid;
@@ -262,7 +291,9 @@
         margin-top: 3px;
       }
 
-      /* FORM */
+      /* ==============================
+       FORM
+       ============================== */
 
       .input-group {
         margin-bottom: 14px;
@@ -357,7 +388,9 @@
         background: #fee2e2;
       }
 
-      /* TARGET */
+      /* ==============================
+       TARGET
+       ============================== */
 
       .target-input {
         display: flex;
@@ -404,7 +437,9 @@
         color: var(--muted);
       }
 
-      /* FILTER */
+      /* ==============================
+       FILTER
+       ============================== */
 
       .filter-row {
         display: flex;
@@ -420,7 +455,9 @@
         white-space: nowrap;
       }
 
-      /* TRANSACTIONS */
+      /* ==============================
+       TRANSACTIONS
+       ============================== */
 
       .history-header {
         display: flex;
@@ -550,7 +587,9 @@
         margin-bottom: 4px;
       }
 
-      /* CHART */
+      /* ==============================
+       CHART
+       ============================== */
 
       .chart-container {
         position: relative;
@@ -562,7 +601,9 @@
         height: 100%;
       }
 
-      /* REPORT */
+      /* ==============================
+       REPORT
+       ============================== */
 
       .report-grid {
         display: grid;
@@ -587,7 +628,9 @@
         font-size: 13px;
       }
 
-      /* ALERT */
+      /* ==============================
+       ALERT
+       ============================== */
 
       .alert {
         padding: 12px 14px;
@@ -617,7 +660,9 @@
         background: #052e16;
       }
 
-      /* MODAL */
+      /* ==============================
+       MODAL
+       ============================== */
 
       .modal {
         position: fixed;
@@ -665,7 +710,9 @@
         flex: 1;
       }
 
-      /* PIN */
+      /* ==============================
+       PIN
+       ============================== */
 
       .pin-screen {
         position: fixed;
@@ -720,7 +767,9 @@
         min-height: 15px;
       }
 
-      /* FOOTER */
+      /* ==============================
+       FOOTER
+       ============================== */
 
       .footer {
         text-align: center;
@@ -729,7 +778,9 @@
         padding: 5px;
       }
 
-      /* MOBILE */
+      /* ==============================
+       MOBILE
+       ============================== */
 
       @media (max-width: 850px) {
         body {
@@ -772,54 +823,68 @@
         }
       }
 
-      /* ===== iPHONE / MOBILE UI ===== */
+      /* ==============================
+       iPHONE / MOBILE UI
+       ============================== */
+
       html {
         -webkit-text-size-adjust: 100%;
         background: var(--bg);
       }
+
       body {
         padding: 0;
         min-height: 100dvh;
         overflow-x: hidden;
         -webkit-tap-highlight-color: transparent;
       }
+
       .container {
         width: 100%;
         max-width: 430px;
         margin: 0 auto;
         padding: 0 14px 24px;
       }
+
       header {
         margin: 0 -14px 14px;
         border-radius: 0 0 28px 28px;
         padding: calc(18px + env(safe-area-inset-top)) 18px 22px;
       }
+
       .header-top {
         gap: 10px;
       }
+
       .header-actions {
         gap: 7px;
       }
+
       .header-btn {
         width: 42px;
         height: 42px;
         border-radius: 50%;
         font-size: 17px;
       }
+
       .brand {
         gap: 10px;
       }
+
       .brand-icon {
         width: 44px;
         height: 44px;
         border-radius: 13px;
       }
+
       .brand h1 {
         font-size: 18px;
       }
+
       .header-balance-label {
         margin-top: 24px;
       }
+
       .header-balance {
         font-size: 29px;
         letter-spacing: -0.5px;
@@ -830,24 +895,29 @@
         gap: 8px;
         margin-bottom: 14px;
       }
+
       .card {
         padding: 13px 11px;
         border-radius: 16px;
       }
+
       .card-top {
         margin-bottom: 10px;
         align-items: flex-start;
       }
+
       .card-label {
         font-size: 8px;
         line-height: 1.25;
       }
+
       .card-icon {
         width: 29px;
         height: 29px;
         border-radius: 9px;
         font-size: 13px;
       }
+
       .amount {
         font-size: 12px;
         line-height: 1.25;
@@ -859,194 +929,243 @@
         flex-direction: column;
         gap: 0;
       }
+
       .grid > div {
         width: 100%;
       }
+
       .box {
         padding: 17px;
         border-radius: 19px;
         margin-bottom: 14px;
       }
+
       .title {
         margin-bottom: 15px;
       }
+
       .title-icon {
         width: 36px;
         height: 36px;
       }
+
       .title h2 {
         font-size: 15px;
       }
+
       .title p {
         font-size: 9px;
       }
+
       .input-group {
         margin-bottom: 13px;
       }
+
       label {
         font-size: 10px;
       }
+
       input,
       select {
         height: 48px;
         border-radius: 12px;
         font-size: 13px;
       }
+
       .btn {
         min-height: 44px;
         border-radius: 12px;
         font-size: 12px;
         padding: 10px 13px;
       }
+
       .btn-primary {
         min-height: 48px;
       }
+
       .target-input {
         gap: 7px;
       }
+
       .target-input button {
         min-width: 78px;
         font-size: 12px;
       }
+
       .progress {
         height: 9px;
         margin-top: 14px;
       }
+
       .filter-row {
         display: grid;
         grid-template-columns: 1fr auto;
         gap: 8px;
       }
+
       .filter-row select {
         min-width: 0;
       }
+
       .filter-row button {
         min-width: 82px;
       }
+
       .history-header h2 {
         font-size: 15px;
       }
+
       .count {
         padding: 5px 8px;
       }
+
       .transaction {
         gap: 10px;
         padding: 14px 0;
       }
+
       .transaction-icon {
         width: 38px;
         height: 38px;
         border-radius: 11px;
       }
+
       .transaction-info strong {
         font-size: 12px;
       }
+
       .transaction-info small {
         font-size: 9px;
       }
+
       .transaction-right {
         max-width: 145px;
       }
+
       .transaction-amount {
         font-size: 11px;
         overflow-wrap: anywhere;
       }
+
       .edit-btn,
       .delete-btn {
         font-size: 10px;
         padding: 5px 2px;
       }
+
       .chart-container {
         height: 245px;
       }
+
       .report-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 7px;
       }
+
       .report-item {
         padding: 11px 9px;
       }
+
       .report-item span {
         font-size: 8px;
       }
+
       .report-item strong {
         font-size: 11px;
         overflow-wrap: anywhere;
       }
+
       .footer {
         padding-bottom: max(8px, env(safe-area-inset-bottom));
         font-size: 8px;
       }
 
       /* iPhone-style modal */
+
       .modal {
         padding: 14px;
         align-items: flex-end;
       }
+
       .modal-box {
         max-width: 430px;
         padding: 22px 18px calc(18px + env(safe-area-inset-bottom));
         border-radius: 24px 24px 0 0;
       }
+
       .modal-actions {
         gap: 8px;
       }
+
       .modal-actions .btn {
         min-height: 48px;
       }
 
       /* PIN screen */
+
       .pin-screen {
         padding: 18px;
         min-height: 100dvh;
       }
+
       .pin-box {
         max-width: 370px;
         border-radius: 25px;
         padding: 28px 22px;
       }
+
       .pin-input {
         height: 54px !important;
         font-size: 24px !important;
       }
+
       .pin-box .btn {
         width: 100%;
         min-height: 48px;
       }
 
       /* Touch-friendly controls */
+
       button,
       select,
       input,
       label {
         touch-action: manipulation;
       }
+
       button {
         -webkit-appearance: none;
       }
 
       /* Small phones */
+
       @media (max-width: 360px) {
         .container {
           padding-left: 10px;
           padding-right: 10px;
         }
+
         header {
           margin-left: -10px;
           margin-right: -10px;
         }
+
         .cards {
           gap: 6px;
         }
+
         .card {
           padding: 11px 8px;
         }
+
         .card-label {
           font-size: 7px;
         }
+
         .amount {
           font-size: 11px;
         }
+
         .report-item strong {
           font-size: 10px;
         }
@@ -1056,12 +1175,18 @@
 
   <body>
     <div class="container">
-      <!-- HEADER -->
+      <!-- ==============================
+         HEADER
+         ============================== -->
+
       <header>
         <div class="header-content">
           <div class="header-top">
             <div class="brand">
-              <div class="brand-icon">💰</div>
+              <!-- LOGO DARI logo.png -->
+              <div class="brand-icon">
+                <img src="./logo.png" alt="Logo Tabungan Saya" />
+              </div>
 
               <div>
                 <small>KEUANGAN PRIBADI</small>
@@ -1094,7 +1219,10 @@
         </div>
       </header>
 
-      <!-- SUMMARY -->
+      <!-- ==============================
+         SUMMARY
+         ============================== -->
+
       <div class="cards">
         <div class="card">
           <div class="card-top">
@@ -1110,7 +1238,7 @@
           <div class="card-top">
             <span class="card-label"> TOTAL PEMASUKAN </span>
 
-            <div class="card-icon green">↗</div>
+            <div class="card-icon green">↗️</div>
           </div>
 
           <div class="amount masuk" id="totalMasuk">Rp 0</div>
@@ -1120,7 +1248,7 @@
           <div class="card-top">
             <span class="card-label"> TOTAL PENGELUARAN </span>
 
-            <div class="card-icon red">↘</div>
+            <div class="card-icon red">↘️</div>
           </div>
 
           <div class="amount keluar" id="totalKeluar">Rp 0</div>
@@ -1128,18 +1256,24 @@
       </div>
 
       <!-- ALERT -->
+
       <div class="alert" id="alertBox"></div>
 
       <div class="grid">
-        <!-- LEFT -->
+        <!-- ==============================
+           LEFT
+           ============================== -->
+
         <div>
           <!-- TRANSACTION FORM -->
+
           <div class="box">
             <div class="title">
               <div class="title-icon">＋</div>
 
               <div>
                 <h2>Tambah Transaksi</h2>
+
                 <p>Catat pemasukan atau pengeluaran</p>
               </div>
             </div>
@@ -1196,12 +1330,14 @@
           </div>
 
           <!-- TARGET -->
+
           <div class="box">
             <div class="title">
               <div class="title-icon">🎯</div>
 
               <div>
                 <h2>Target Tabungan</h2>
+
                 <p>Tentukan tujuan tabungan Anda</p>
               </div>
             </div>
@@ -1229,12 +1365,14 @@
           </div>
 
           <!-- BACKUP -->
+
           <div class="box">
             <div class="title">
               <div class="title-icon">💾</div>
 
               <div>
                 <h2>Backup Data</h2>
+
                 <p>Simpan atau pulihkan data Anda</p>
               </div>
             </div>
@@ -1263,9 +1401,13 @@
           </div>
         </div>
 
-        <!-- RIGHT -->
+        <!-- ==============================
+           RIGHT
+           ============================== -->
+
         <div>
           <!-- HISTORY -->
+
           <div class="box">
             <div class="history-header">
               <h2>📋 Riwayat Transaksi</h2>
@@ -1278,7 +1420,6 @@
                 <option value="all">Semua Bulan</option>
               </select>
 
-              <!-- RESET SUDAH DIUBAH MENJADI HAPUS SEMUA -->
               <button class="btn btn-danger" onclick="hapusSemua()">
                 🗑️ Reset
               </button>
@@ -1288,12 +1429,14 @@
           </div>
 
           <!-- CHART -->
+
           <div class="box">
             <div class="title">
               <div class="title-icon">📊</div>
 
               <div>
                 <h2>Grafik Keuangan</h2>
+
                 <p>Perbandingan pemasukan dan pengeluaran</p>
               </div>
             </div>
@@ -1304,12 +1447,14 @@
           </div>
 
           <!-- REPORT -->
+
           <div class="box">
             <div class="title">
               <div class="title-icon">📈</div>
 
               <div>
                 <h2>Laporan Bulanan</h2>
+
                 <p>Ringkasan berdasarkan filter bulan</p>
               </div>
             </div>
@@ -1340,7 +1485,10 @@
       <div class="footer">Data tersimpan secara lokal di perangkat Anda.</div>
     </div>
 
-    <!-- EDIT MODAL -->
+    <!-- ==============================
+       EDIT MODAL
+       ============================== -->
+
     <div class="modal" id="editModal">
       <div class="modal-box">
         <h2>✏️ Edit Transaksi</h2>
@@ -1389,7 +1537,10 @@
       </div>
     </div>
 
-    <!-- PIN SCREEN -->
+    <!-- ==============================
+       PIN SCREEN
+       ============================== -->
+
     <div class="pin-screen" id="pinScreen">
       <div class="pin-box">
         <div class="pin-icon">🔐</div>
@@ -1423,10 +1574,14 @@
       </div>
     </div>
 
+    <!-- ==============================
+       JAVASCRIPT
+       ============================== -->
+
     <script>
       /* =====================================================
-         DATA
-      ===================================================== */
+       DATA
+       ===================================================== */
 
       let transactions = JSON.parse(localStorage.getItem("tabunganSaya")) || [];
 
@@ -1435,8 +1590,8 @@
       let editingId = null;
 
       /* =====================================================
-         FORMAT RUPIAH
-      ===================================================== */
+       FORMAT RUPIAH
+       ===================================================== */
 
       function rupiah(number) {
         return new Intl.NumberFormat("id-ID", {
@@ -1447,8 +1602,8 @@
       }
 
       /* =====================================================
-         FORMAT TANGGAL
-      ===================================================== */
+       FORMAT TANGGAL
+       ===================================================== */
 
       function formatTanggal(date) {
         if (!date) return "-";
@@ -1461,16 +1616,16 @@
       }
 
       /* =====================================================
-         SAVE DATA
-      ===================================================== */
+       SAVE DATA
+       ===================================================== */
 
       function saveData() {
         localStorage.setItem("tabunganSaya", JSON.stringify(transactions));
       }
 
       /* =====================================================
-         TANGGAL HARI INI
-      ===================================================== */
+       TANGGAL HARI INI
+       ===================================================== */
 
       function setTanggalHariIni() {
         const now = new Date();
@@ -1485,8 +1640,8 @@
       }
 
       /* =====================================================
-         ESCAPE HTML
-      ===================================================== */
+       ESCAPE HTML
+       ===================================================== */
 
       function escapeHtml(text) {
         const div = document.createElement("div");
@@ -1497,8 +1652,8 @@
       }
 
       /* =====================================================
-         HITUNG TOTAL
-      ===================================================== */
+       HITUNG TOTAL
+       ===================================================== */
 
       function calculateTotals(list = transactions) {
         let masuk = 0;
@@ -1522,8 +1677,8 @@
       }
 
       /* =====================================================
-         UPDATE FILTER BULAN
-      ===================================================== */
+       UPDATE FILTER BULAN
+       ===================================================== */
 
       function updateMonthFilter() {
         const select = document.getElementById("monthFilter");
@@ -1537,8 +1692,8 @@
           .reverse();
 
         select.innerHTML = `<option value="all">
-            Semua Bulan
-          </option>`;
+          Semua Bulan
+        </option>`;
 
         months.forEach((month) => {
           const [year, mon] = month.split("-");
@@ -1567,8 +1722,8 @@
       }
 
       /* =====================================================
-         TRANSAKSI FILTER
-      ===================================================== */
+       TRANSAKSI FILTER
+       ===================================================== */
 
       function getFilteredTransactions() {
         const filter = document.getElementById("monthFilter").value;
@@ -1583,8 +1738,8 @@
       }
 
       /* =====================================================
-         RESET FILTER
-      ===================================================== */
+       RESET FILTER
+       ===================================================== */
 
       function resetFilter() {
         document.getElementById("monthFilter").value = "all";
@@ -1593,8 +1748,8 @@
       }
 
       /* =====================================================
-         RENDER
-      ===================================================== */
+       RENDER
+       ===================================================== */
 
       function render() {
         updateMonthFilter();
@@ -1650,23 +1805,23 @@
         if (filtered.length === 0) {
           list.innerHTML = `
 
-            <div class="empty">
+          <div class="empty">
 
-              <div class="empty-icon">
-                📋
-              </div>
-
-              <strong>
-                Belum ada transaksi
-              </strong>
-
-              <span>
-                Tambahkan transaksi untuk melihat riwayat.
-              </span>
-
+            <div class="empty-icon">
+              📋
             </div>
 
-          `;
+            <strong>
+              Belum ada transaksi
+            </strong>
+
+            <span>
+              Tambahkan transaksi untuk melihat riwayat.
+            </span>
+
+          </div>
+
+        `;
         } else {
           const sorted = [...filtered].sort((a, b) => {
             const date = new Date(b.date) - new Date(a.date);
@@ -1690,7 +1845,7 @@
                       class="transaction-icon
                       ${income ? "in" : "out"}"
                     >
-                      ${income ? "↗" : "↘"}
+                      ${income ? "↗️" : "↘️"}
                     </div>
 
                     <div class="transaction-info">
@@ -1746,8 +1901,8 @@
       }
 
       /* =====================================================
-         TAMBAH TRANSAKSI
-      ===================================================== */
+       TAMBAH TRANSAKSI
+       ===================================================== */
 
       document
         .getElementById("transactionForm")
@@ -1808,8 +1963,8 @@
         });
 
       /* =====================================================
-         HAPUS SATU TRANSAKSI
-      ===================================================== */
+       HAPUS SATU TRANSAKSI
+       ===================================================== */
 
       function hapusTransaksi(id) {
         if (!confirm("Hapus transaksi ini?")) {
@@ -1824,8 +1979,8 @@
       }
 
       /* =====================================================
-         RESET / HAPUS SEMUA RIWAYAT
-      ===================================================== */
+       RESET / HAPUS SEMUA
+       ===================================================== */
 
       function hapusSemua() {
         if (transactions.length === 0) {
@@ -1852,16 +2007,14 @@
 
         render();
 
-        /* Kembalikan filter ke semua bulan */
-
         document.getElementById("monthFilter").value = "all";
 
         alert("✅ Semua riwayat transaksi berhasil dihapus.");
       }
 
       /* =====================================================
-         EDIT TRANSAKSI
-      ===================================================== */
+       EDIT TRANSAKSI
+       ===================================================== */
 
       function editTransaction(id) {
         const item = transactions.find((t) => t.id === id);
@@ -1936,8 +2089,8 @@
       }
 
       /* =====================================================
-         TARGET TABUNGAN
-      ===================================================== */
+       TARGET TABUNGAN
+       ===================================================== */
 
       function setTarget() {
         const value = Number(document.getElementById("targetInput").value);
@@ -1973,8 +2126,8 @@
       }
 
       /* =====================================================
-         CHART
-      ===================================================== */
+       CHART
+       ===================================================== */
 
       function drawChart() {
         const canvas = document.getElementById("chart");
@@ -2119,8 +2272,8 @@
       }
 
       /* =====================================================
-         ALERT
-      ===================================================== */
+       ALERT
+       ===================================================== */
 
       function checkAlert() {
         const totals = calculateTotals();
@@ -2151,8 +2304,8 @@
       }
 
       /* =====================================================
-         EXPORT CSV
-      ===================================================== */
+       EXPORT CSV
+       ===================================================== */
 
       function exportCSV() {
         if (transactions.length === 0) {
@@ -2189,8 +2342,8 @@
       }
 
       /* =====================================================
-         BACKUP JSON
-      ===================================================== */
+       BACKUP JSON
+       ===================================================== */
 
       function backupJSON() {
         const data = {
@@ -2219,8 +2372,8 @@
       }
 
       /* =====================================================
-         RESTORE JSON
-      ===================================================== */
+       RESTORE JSON
+       ===================================================== */
 
       function restoreJSON(event) {
         const file = event.target.files[0];
@@ -2275,8 +2428,8 @@
       }
 
       /* =====================================================
-         DARK MODE
-      ===================================================== */
+       DARK MODE
+       ===================================================== */
 
       function toggleDarkMode() {
         document.body.classList.toggle("dark");
@@ -2297,8 +2450,8 @@
       }
 
       /* =====================================================
-         PIN
-      ===================================================== */
+       PIN
+       ===================================================== */
 
       function lockApp() {
         const pin = localStorage.getItem("tabunganPIN");
@@ -2368,8 +2521,8 @@
       }
 
       /* =====================================================
-         ENTER PIN
-      ===================================================== */
+       ENTER PIN
+       ===================================================== */
 
       document
         .getElementById("pinInput")
@@ -2380,8 +2533,8 @@
         });
 
       /* =====================================================
-         START APPLICATION
-      ===================================================== */
+       START APPLICATION
+       ===================================================== */
 
       loadDarkMode();
 

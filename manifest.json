@@ -1,0 +1,17 @@
+{
+  "name": "Tabungan Saya",
+  "short_name": "Tabungan",
+  "description": "Aplikasi untuk mengatur tabungan dan keuangan pribadi",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#F5F7FB",
+  "theme_color": "#6366F1",
+  "icons": [
+    {
+      "src": "./logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
